@@ -1,0 +1,134 @@
+@import url(setup.css);
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'vend-sans';
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    font-size: 1.5rem;
+    width: 100vw;
+}
+
+div.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2vw;
+    background-color: var(--color-bloodRed);
+    color: white;
+    box-shadow: 0 4px 6px #0000004d;
+    height: 10vh;
+}
+
+div.options{
+    width: 20vw;
+    height: 90vh;
+    background-color: var(--color-bloodRed);
+    transform: translate(100vw);
+    transition: transform 0.3s ease;
+}
+
+ul{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+}
+
+li{
+    text-align: center;
+    padding: 5px;
+    width: 80%;
+    background-color: var(--color-bloodRed);
+    transition: background-color 0.4s ease;
+    /* height: fit-content;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+li:hover{
+    background-color: var(--color-darkBloodRed);
+}
+
+a{
+    color: var(--color-golden);
+    text-decoration: none;
+}
+
+div.logo{
+    height: 90%;
+}
+
+div.logo img{
+    height: 100%;
+}
+
+h1{
+    font-family: 'gold-china';
+    color: var(--color-golden);
+    font-size: 4rem;
+    text-align: center;
+}
+
+div.menu{
+    height: 50%;
+}
+
+div.menu > img{
+    height: 100%;
+    cursor:pointer;
+}
+
+/* MEDIA SCREEN LAYOUTS */
+@media  screen and (max-width: 865px) {
+    body{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    div.logo{
+        height: 80%;
+    }
+    div.menu{
+        height: 40%;
+    }
+    div.options{
+        width: 40vw;
+    }
+}
+
+@media  screen and (max-height: 800px) {
+    body{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    h1{
+        font-size: 2rem;
+    }
+    div.logo{
+        height: 70%;
+    }
+}
+
+@media  screen and (max-height: 500px) {
+    body{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+}

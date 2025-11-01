@@ -1,0 +1,23 @@
+:root{
+    --color-bloodRed: #780606;
+    --color-darkBloodRed: #610505;
+    --color-golden: #ce9c56;
+    --color-jetblack: #252525;
+}
+
+@font-face {
+    font-family: 'gold-china';
+    src: url('assets/fonts/gold-china/GoldChina-Regular.otf') format('opentype'),
+         url('assets/fonts/gold-china/GoldChina-Regular.ttf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'gang-of-three';
+    src: url('assets/fonts/gang_of_three/go3v2.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'vend-sans';
+    src: url('assets/fonts/Vend_Sans/VendSans-Regular.ttf');
+}
