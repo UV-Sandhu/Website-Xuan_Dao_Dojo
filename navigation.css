@@ -2,6 +2,7 @@
 
 html{
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body{
@@ -24,6 +25,7 @@ div.navbar{
     color: white;
     box-shadow: 0 4px 6px #0000004d;
     height: 10vh;
+    border-bottom: 1px solid var(--color-golden);
 }
 
 div.options{
@@ -34,6 +36,12 @@ div.options{
     top: 10vh;
     transform: translate(100vw);
     transition: transform 0.3s ease;
+    border-left: 1px solid var(--color-golden);
+    border-top: 1px solid var(--color-golden);
+    /* border-right: none; */
+    /* border-top-left-radius: 10px; */
+    /* border-bottom-left-radius: 10px; */
+
 }
 
 ul{
@@ -51,16 +59,14 @@ li{
     width: 80%;
     background-color: var(--color-bloodRed);
     transition: background-color 0.4s ease;
-    /* height: fit-content;
-    overflow: hidden;
-    text-overflow: ellipsis; */
 }
 
 li:hover{
     background-color: var(--color-darkBloodRed);
 }
 
-span.button{
+a{
+    text-decoration: none;
     color: var(--color-golden);
 }
 
@@ -86,6 +92,11 @@ div.menu{
 div.menu > img{
     height: 100%;
     cursor:pointer;
+}
+
+iframe{
+    width: 100vw;
+    height: 90vh;
 }
 
 /* MEDIA SCREEN LAYOUTS */

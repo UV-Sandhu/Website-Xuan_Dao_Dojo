@@ -1,0 +1,148 @@
+@import url("setup.css");
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "vend-sans";
+    font-size: 1.5rem;
+}
+
+section.section-1{
+    min-height: 100vh;
+    max-height: fit-content;
+    padding-bottom: 40px;
+    background: var(--color-bloodRed);
+    transform: translate(0px);
+    /* transition to be used in js to slide it up */
+    transition: 3s transform cubic-bezier(0.6, 0.22, 0, 0.97) 0.1s;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    overflow: hidden;
+}
+
+div.info{
+    color: white;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "carousel content";
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+}
+
+div.info > div.carousel{
+    grid-area: carousel;
+    border-radius: 20px;
+    height: 600px;
+    width: 400px;
+    content: url("assets/images/img-1.jpg");
+    animation: section-1-carousel 30s ease infinite;
+    border: 3px solid var(--color-golden);
+    padding: 2px;
+}
+
+@keyframes section-1-carousel{
+    0%{
+        opacity: 0;
+        content: url("assets/images/img-1.jpg");
+    }
+    10%{
+        opacity: 1;
+        content: url("assets/images/img-1.jpg");
+    }
+    23%{
+        opacity: 1;
+        content: url("assets/images/img-1.jpg");
+    }
+    33%{
+        opacity: 0;
+        content: url("assets/images/img-1.jpg");
+    }
+
+    34%{
+        opacity: 0;
+        content: url("assets/images/img-2.jpg");
+    }
+    44%{
+        opacity: 1;
+        content: url("assets/images/img-2.jpg");
+    }
+    56%{
+        opacity: 1;
+        content: url("assets/images/img-2.jpg");
+    }
+    66%{
+        opacity: 0;
+        content: url("assets/images/img-2.jpg");
+    }
+
+    67%{
+        opacity: 0;
+        content: url("assets/images/img-3.jpg");
+    }
+    77%{
+        opacity: 1;
+        content: url("assets/images/img-3.jpg");
+    }
+    90%{
+        opacity: 1;
+        content: url("assets/images/img-3.jpg");
+    }
+    100%{
+        opacity: 0;
+        content: url("assets/images/img-3.jpg");
+    }
+
+}
+
+div.sigil{
+    position: relative;
+    align-self: center;
+    grid-area: carousel;
+    width: 400px;
+}
+
+h1,h2,h3{
+    font-family: "gold-china";
+    color: var(--color-golden);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+div.description{
+    width: 500px;
+    text-align: center;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid var(--color-golden) ;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-golden);
+}
+
+section > img{
+    position: absolute;
+    width: 60vw;
+    opacity: 0.15;
+    z-index: -1;
+}
