@@ -20,7 +20,7 @@ section.section-1{
     /* transition to be used in js to slide it up */
     transition: 3s transform cubic-bezier(0.6, 0.22, 0, 0.97) 0.1s;
     display: flex;
-    position: absolute;
+    position:absolute;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -47,7 +47,7 @@ div.info > div.carousel{
     height: 600px;
     width: 400px;
     content: url("assets/images/img-1.jpg");
-    animation: section-1-carousel 30s ease infinite;
+    animation: section-1-carousel 21s ease infinite;
     border: 3px solid var(--color-golden);
     padding: 2px;
 }
@@ -145,4 +145,23 @@ section > img{
     width: 60vw;
     opacity: 0.15;
     z-index: -1;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.pulldown-indicator{
+    height: 40px;
+    background: url("assets/images/icons/down-arrow-circle.svg");
+    background-size: contain;
+    background-color: var(--color-bloodRed);
+    scroll-snap-align: start;
+}
+
+.section-2{
+    scroll-snap-stop: always;
+    scroll-snap-align: start;
+    border: 1px solid yellowgreen;
 }
