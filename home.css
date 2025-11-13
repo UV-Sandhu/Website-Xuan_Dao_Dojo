@@ -4,6 +4,10 @@ html{
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 body{
     margin: 0px;
     padding: 0px;
@@ -164,4 +168,30 @@ html{
     scroll-snap-stop: always;
     scroll-snap-align: start;
     border: 1px solid yellowgreen;
+}
+
+@media screen and (max-width: 1095px) {
+    div.info{
+        grid-template-areas: "carousel" "content";
+        justify-content: center;
+        padding-top: 3vh;
+    }
+
+    div.carousel{
+        margin: auto;
+    }
+    div.description{
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    div.info > div.carousel{
+        width: 200px;
+        height: 300px;
+    }
+    div.description{
+        width: 70vw;
+    }
 }
