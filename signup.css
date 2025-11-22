@@ -1,0 +1,114 @@
+@import url("setup.css");
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "vend-sans";
+    background-color: var(--color-jetBlack);
+    color: black;
+}
+
+.pageBackground {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    z-index: -100;
+    opacity: 0.25;
+}
+
+.pageBackground img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.panelContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000004;
+}
+
+.panel{
+    backdrop-filter: blur(3px);
+    padding: 25px;
+    width: 500px;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #00000085;
+    outline: solid 3px var(--color-golden);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h1{
+    font-family: "gold-china";
+    font-size: 3rem;
+    text-align: center;
+    color: var(--color-golden);
+}
+
+.panel form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.panel input{
+    width: 70%;
+    height: 2rem;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 2px solid var(--color-golden);
+}
+
+.panel input:focus{
+    outline: 1px solid var(--color-golden);
+    box-shadow: 0px 0px 20px 0px var(--color-golden);
+}
+
+.panel button{
+    width: 50%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-golden);
+    color: var(--color-jetBlack);
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px var(--color-golden);
+    transform: scale(1);
+    transition: all 0.15s ease-in-out;
+}
+.panel button:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 5px 0px var(--color-golden);
+}
+
+.moreOptions{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.moreOptions a{
+    color: var(--color-golden);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.moreOptions a:hover{
+    text-decoration: underline;
+}

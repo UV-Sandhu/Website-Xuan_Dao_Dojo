@@ -19,7 +19,7 @@ section.section-1{
     min-height: 100vh;
     max-height: fit-content;
     padding-bottom: 40px;
-    background: var(--color-bloodRed);
+    background: var(--color-jetBlack);
     transform: translate(0px);
     /* transition to be used in js to slide it up */
     transition: 3s transform cubic-bezier(0.6, 0.22, 0, 0.97) 0.1s;
@@ -160,7 +160,7 @@ html{
     height: 40px;
     background: url("assets/images/icons/down-arrow-circle.svg");
     background-size: contain;
-    background-color: var(--color-bloodRed);
+    background-color: var(--color-jetBlack);
     scroll-snap-align: start;
 }
 
@@ -183,10 +183,17 @@ html{
     div.description{
         margin: auto;
     }
+
+    h1{
+        font-size: 2rem;
+    }
 }
 
 
 @media screen and (max-width: 580px) {
+    body{
+        font-size: 1rem;
+    }
     div.info > div.carousel{
         width: 200px;
         height: 300px;
@@ -194,4 +201,5 @@ html{
     div.description{
         width: 70vw;
     }
+
 }

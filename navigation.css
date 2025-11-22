@@ -21,7 +21,7 @@ div.navbar{
     justify-content: space-between;
     align-items: center;
     padding: 0px 2vw;
-    background-color: var(--color-bloodRed);
+    background-color: var(--color-jetBlack);
     color: white;
     box-shadow: 0 4px 6px #0000004d;
     height: 10vh;
@@ -31,7 +31,7 @@ div.navbar{
 div.options{
     width: 20vw;
     height: 90vh;
-    background-color: var(--color-bloodRed);
+    background-color: var(--color-jetBlack);
     position: fixed;
     top: 10vh;
     transform: translate(100vw);
