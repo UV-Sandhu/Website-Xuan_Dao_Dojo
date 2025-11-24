@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up - Xuan Dao Dojo</title>
+        <link rel="stylesheet" href="signup.css">
+    <style>
+        .panel form{
+            display: flex;
+            justify-content: start;
+            gap: 10px;
+            height: 200px;
+            overflow: clip;
+        }
+        img{
+            width: 100%;
+            width: 100%;
+        }
+        
+        button.back{
+            width: 40px;
+            height: 40px;
+            background-image: url('assets/icons/backArrow.png');
+            background-size: cover;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+        .flow-control{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+        
+        .flow-control img{
+            width: 40px;
+            cursor: pointer;
+        }
+        
+        form .content{
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+            position: relative;
+            top: 250px;
+            transition: transform 0.7s cubic-bezier(0.46, 0.1, 0.06, 1.38);
+        }
+
+        .content > div{
+            text-align: center;
+        }
+
+        select{
+            width: 250px;
+            height: 2.2rem;
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px solid var(--color-golden);
+            
+        }
+        select:focus{
+            outline: 1px solid var(--color-golden);
+            box-shadow: 0px 0px 20px 0px var(--color-golden);
+        }
+
+        button[type="button"].submit{
+            width: 40%;
+            opacity: 0;
+            transition: opacity 0.7s ease;
+        }
+
+    </style>
+
+    <script src="personalInfo.js"></script>
+</head>
+<body>
+    <div class="pageBackground">
+        <img src="assets/images/dragon.png" alt="">
+    </div>
+    <div class="panelContainer">
+        <div class="panel">
+            <h1>Let's Start Your Journey...</h1>
+            <form action="">
+                <div class="content">
+                    <div class="1">
+                        <h2>Let's start by getting to know you.</h2>
+                    </div>
+                    <div class="2">
+                        <h2>What is your Name?</h2>
+                        <input type="text" name="name" id="name" placeholder="Your Name...">
+                    </div>
+                    <div class="3">
+                        <h2>What is your Date of Birth?</h2>
+                        <input type="date" name="dob" id="dob">
+                    </div>
+                    <div class="4">
+                        <h2>What is your Gender?</h2>
+                        <select name="gender" id="gender">
+                            <option value="" disabled selected>Select your Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Sorry I'm not sure...</option>
+                        </select>
+                    </div>
+                    <div class="5">
+                        <h2>Your Weight class?</h2>
+                        <input type="number" name="weight" id="weight" placeholder="Weight in kg...">
+                    </div>
+                    <div class="6">
+                        <h2>How did you hear about us?</h2>
+                        <select name="" id="">
+                            <option value="" disabled selected>...</option>
+                            <option value="">We really DON'T CARE (and you should know that)</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="flow-control">
+                <img src="assets/images/icons/back-arrow.svg" alt="Back" onclick="moveBack()">
+                <button type="button" class="submit">Submit</button>
+                <img src="assets/images/icons/next-arrow.svg" alt="Next" onclick="moveNext()">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
