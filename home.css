@@ -158,7 +158,7 @@ html{
 
 .pulldown-indicator{
     height: 40px;
-    background: url("assets/images/icons/down-arrow-circle.svg");
+    background: url("assets/images/icons/down-arrow.svg");
     background-size: contain;
     background-color: var(--color-jetBlack);
     scroll-snap-align: start;

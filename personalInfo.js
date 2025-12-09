@@ -6,6 +6,7 @@ function moveNext(){
     if (currentStep < steps.length){
         if(currentStep == 5){
             document.querySelector("button[type=\"button\"].submit").style.opacity = 1;
+            document.querySelector(".right").style.opacity = 0.3;
         }
         const content = document.querySelector('form .content');
         currentStep++;
@@ -14,6 +15,9 @@ function moveNext(){
 }
 
 function moveBack(){
+    if (currentStep < 2){
+        document.querySelector("left").style.opacity = 0.3;
+    }
     if (currentStep > 2){
         const content = document.querySelector('form .content');
         currentStep--;

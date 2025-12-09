@@ -87,6 +87,7 @@ h1{
 
 div.menu{
     height: 50%;
+    transition: transform 0.2s ease-in-out;
 }
 
 div.menu > img{
